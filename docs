@@ -1,0 +1,43 @@
+1. Both js and nodejs are running in chrome v8 engine which converts into js code into machine code faster.
+2. v8 is open source js engine is written in c++.
+3. node is the command which executes in terminal.
+4. process is the node command in terminal to controll the node process i.e process.exit(0) which exit from the node.
+5. Node js is non-blocking I/O.
+
+
+6. Difference between blocking i/o vs non-blocking i/o.. The blocking i/o will execute step by step or line by line,
+   for speed up the process we should multithreading concept but also it consumes more memory in CPU.
+
+   But nodejs is single threading which uses non-blocking i/o which executes multiple tasks at the same time, which does not execute line by line if the controller is free then it start executing different lines.
+
+   Eg. if one line is fetching data from db, the second line does not wait for the first line until it does not depends on first line, the second line will start executing automatically if it is not depends on first line..
+
+   Because of non-blocking i/o the nodejs is super fast and light weight efficient..
+
+   node js has a "npm" package called as node package manager which has high third party modules which developers are developing daily. so we can just use them, need not create your own.
+
+   we installed npm package that installed with nodejs you can use "npm -v" to check the version of npm.
+
+   "npm init" is the command that gave detailed message of what package that are using and stores them in package.json file.
+
+   "npm install lodash --save" is the command to install any package for nodejs from npm
+
+   "lodash" is a npm package which has many predefined functions like array, isstring etcc... look all
+    lodash functions which has predefined data structure methods.
+
+    if you delete the node_modules folder then you can use "node install" command which automatically install lodash Because
+    which is present in package.json file already..
+
+    nodemon is the npm package which uses automatically runs the nodejs application when the changes has been done..
+
+    "npm install yargs --save" is the npm package which is used for manipulating command line args..
+
+    { name: 'ram', age: 23 } => javascript object
+    {"name":"ram","age":23}  => json object
+    json called as javascript object notation which return string.
+
+    Debugging a node js application by "node inspect filename.js" use "debugger" in a file and jumps directly to that line
+    with command 'c' in Debugging use command 'n' for line by line in terminal
+
+    "node --inspect-brk filename.js" type in terminal will used to debug in chrome developers tools by typing "chrome://inspect" in chrome..
+    debugger keyword in a file to start debug from there.
